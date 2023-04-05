@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Current Weather</title>
+    <!-- CSS RESET -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Current Weather</h1>
+    </header>
+    <main>
+        <!-- CITY SELECT -->
+        <form action="" method="get" onchange="cityChange()">
+            <fieldset>
+                <label>Choose City</label>
+                <select name="cities" id="select">
+                    <option value="london">London</option>
+                    <option value="seoul">Seoul</option>
+                    <option value="toronto" selected>Toronto</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <!-- WEATEHR DETAILS--TOP -->
+        <section class="weather__top">
+            <div class="container">
+                
+                <!-- CITY NAME -->
+                <p class="city__name">
+                    
+                </p>
+                <!-- TEMPERATURE -->
+                <h1 class="temp">
+
+                </h1>
+                <!-- CONDITION -->
+                <div class="condition">
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WEATHER DETAILS--BOTTOM -->
+        <section class="weather__bottom">
+            <div class="container">
+
+                <!-- HUMIDITY -->
+                <div class="humidity__con">
+                    <p class="weather__bottom-heading">HUMIDITY</p>
+                    <p class="humidity">
+
+                    </p>
+                </div>
+                <!-- WIND -->
+                <div class="wind__con">
+                    <p class="weather__bottom-heading">WIND</p>
+                    <p class="wind"></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LAST UPDATE -->
+        <p class="last__update"></p>
+    </main>
+    <!-- JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
